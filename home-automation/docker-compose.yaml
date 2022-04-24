@@ -22,16 +22,16 @@ services:
       - ./mosquitto/config:/mosquitto/config
       - ./mosquitto/data:/mosquitto/data
       - ./mosquitto/log:/mosquitto/log
-#  zigbee2mqtt:
-#    container_name: zigbee2mqtt
-#    image: koenkk/zigbee2mqtt
-#    restart: unless-stopped
-#    volumes:
-#      - ./data:/app/data
-#      - /run/udev:/run/udev:ro
-#    ports:
-#      - 8080:8081
-#    environment:
-#      - TZ=Europe/Prague
-#    devices:
-#      - /dev/ttyACM0:/dev/ttyACM0
+  zigbee2mqtt:
+    container_name: zigbee2mqtt
+    image: koenkk/zigbee2mqtt
+    restart: unless-stopped
+    volumes:
+      - ./data:/app/data
+      - /run/udev:/run/udev:ro
+    ports:
+      - 8080:8081
+    environment:
+      - TZ=Europe/Prague
+    devices:
+      - /dev/ttyACM0:/dev/ttyACM0
