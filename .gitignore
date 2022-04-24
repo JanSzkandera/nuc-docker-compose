@@ -1,0 +1,33 @@
+# IntelliJ IDEA Files
+.idea
+**/*.iml
+out
+
+# Maven Files
+target
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Eclipse Files
+.project
+.classpath
+.metadata
+.settings
+.externalToolBuilders
+.buildpath
+
+# Microservice Files
+logs
+
+# Camunda License File
+/src/main/resources/camunda-license.txt
+/frigate-service/src/main/resources/application-LOCAL.yml
+
+frigate-base.ipr
+frigate-base.iws
